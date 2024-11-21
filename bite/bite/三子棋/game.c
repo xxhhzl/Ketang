@@ -125,7 +125,7 @@ int ces(char n[COL][BO])
 		int j,c=0,d=0;
 		for (j = 0; j < COL; j++)
 		{
-			if (n[i][j] == '*')
+			if (n[j][i] == '*')
 			{
 				c++;
 				if (c == 3)
@@ -134,7 +134,7 @@ int ces(char n[COL][BO])
 					return 1;
 				}
 			}
-			if (n[i][j] == '#')
+			if (n[j][i] == '#')
 			{
 				d++;
 				if (d == 3)
