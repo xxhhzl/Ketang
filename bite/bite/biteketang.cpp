@@ -1,4 +1,4 @@
-#include<stdio.h>
+//#include<stdio.h>
 //putsº¯Êý
 //int main()
 //{
@@ -134,8 +134,8 @@
 //	css(a);
 //	return 0;
 //}
-#include<stdio.h>
-#include<string.h>
+//#include<stdio.h>
+//#include<string.h>
 //int cas(char* a)
 //{
 //	int b = 0;
@@ -333,7 +333,7 @@
 //	/*printf("%d\n",fbnq(n));*/
 //	return 0;
 //}
-#include<stdio.h>
+//#include<stdio.h>
 //void fxzfc(char *n)
 //{
 //	int a = strlen(*n);
@@ -373,7 +373,7 @@
 //	printf("%d", css(n));
 //	return 0;
 //}
-#include<stdio.h>
+//#include<stdio.h>
 //int jiec(int n)
 //{
 //	if (n <= 2)
@@ -588,32 +588,76 @@
 //    }
 //    return 0;
 //}
-#include <stdio.h>
-#include <stdlib.h>
-
-int main(int argc, char* argv[])
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int main(int argc, char* argv[])
+//{
+//    int T, i;
+//    scanf("%d", &T);
+//    int X[T];
+//    for (i = 0; i < T; i++)
+//    {
+//        scanf("%d", &X[i]);
+//    }
+//    int i;
+//    long long int N;
+//    for (i = 0; i < T; i++)
+//    {
+//        int a;
+//        for (a = 1; a < X[i]; a++)
+//        {
+//            int c = sqrt(X[i]);
+//            if (a > c && a % c == 0)
+//            {
+//                N = N + a;
+//            }
+//        }
+//    }
+//    printf("%lld", N % 998244353);
+//    return 0;
+//}
+#include<stdio.h>
+void css(int a[],int n)
 {
-    int T, i;
-    scanf("%d", &T);
-    int X[T];
-    for (i = 0; i < T; i++)
-    {
-        scanf("%d", &X[i]);
-    }
-    int i;
-    long long int N;
-    for (i = 0; i < T; i++)
-    {
-        int a;
-        for (a = 1; a < X[i]; a++)
-        {
-            int c = sqrt(X[i]);
-            if (a > c && a % c == 0)
-            {
-                N = N + a;
-            }
-        }
-    }
-    printf("%lld", N % 998244353);
-    return 0;
+	for (int i = 0; i < n - 1; i++)
+	{
+		int j, b = a[0], c, d;
+		for (j = 0; j < n; j++)
+		{
+			if (b > a[j])
+			{
+				b = a[j];
+				c = j;
+			}
+		}
+		d = a[c];
+		a[c] = a[i];
+		a[i] = d;
+	}
+	for (int i = 0; i < n; i++)
+	{
+		printf("%d", a[i]);
+	}
+}
+int main()
+{
+	const int n = 5;
+	int a[n];
+	for (int i = 0; i < n; i++)
+	{
+		scanf("%d", &a[i]);
+	}
+	css(a, n);
+	int b = 0;
+	for (int i = 0; i < n; i++)
+	{
+		if (a[i + 1] - a[i] != 0 && a[i + 1] - a[i] != 1)
+		{
+			b = a[i] + 1;
+			break;
+		}
+	}
+	printf("%d", b);
+	return 0;
 }
