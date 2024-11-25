@@ -617,47 +617,67 @@
 //    printf("%lld", N % 998244353);
 //    return 0;
 //}
+//#include<stdio.h>
+//void css(int a[],int n)
+//{
+//	for (int i = 0; i < n - 1; i++)
+//	{
+//		int j, b = a[0], c, d;
+//		for (j = 0; j < n; j++)
+//		{
+//			if (b > a[j])
+//			{
+//				b = a[j];
+//				c = j;
+//			}
+//		}
+//		d = a[c];
+//		a[c] = a[i];
+//		a[i] = d;
+//	}
+//	for (int i = 0; i < n; i++)
+//	{
+//		printf("%d", a[i]);
+//	}
+//}
+//int main()
+//{
+//	const int n = 5;
+//	int a[n];
+//	for (int i = 0; i < n; i++)
+//	{
+//		scanf("%d", &a[i]);
+//	}
+//	css(a, n);
+//	int b = 0;
+//	for (int i = 0; i < n; i++)
+//	{
+//		if (a[i + 1] - a[i] != 0 && a[i + 1] - a[i] != 1)
+//		{
+//			b = a[i] + 1;
+//			break;
+//		}
+//	}
+//	printf("%d", b);
+//	return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//	char a[50];
+//	int c = 10, b = 20;
+//	int n = sprintf(a, "%d+%d=%d", c, b,c+b);
+//	printf("%s %d", a, n);
+//	return 0;
+//}
 #include<stdio.h>
-void css(int a[],int n)
-{
-	for (int i = 0; i < n - 1; i++)
-	{
-		int j, b = a[0], c, d;
-		for (j = 0; j < n; j++)
-		{
-			if (b > a[j])
-			{
-				b = a[j];
-				c = j;
-			}
-		}
-		d = a[c];
-		a[c] = a[i];
-		a[i] = d;
-	}
-	for (int i = 0; i < n; i++)
-	{
-		printf("%d", a[i]);
-	}
-}
 int main()
 {
-	const int n = 5;
-	int a[n];
-	for (int i = 0; i < n; i++)
-	{
-		scanf("%d", &a[i]);
-	}
-	css(a, n);
-	int b = 0;
-	for (int i = 0; i < n; i++)
-	{
-		if (a[i + 1] - a[i] != 0 && a[i + 1] - a[i] != 1)
-		{
-			b = a[i] + 1;
-			break;
-		}
-	}
-	printf("%d", b);
+	int a[50];
+	int c = 10, b = 20;
+	int n = sprintf(a,"%0", c);
+	printf("%d  %d", a, n);
 	return 0;
 }
+
+
