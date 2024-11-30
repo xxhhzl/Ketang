@@ -671,13 +671,74 @@
 //	return 0;
 //}
 #include<stdio.h>
+//int main()
+//{
+//	int a[50];
+//	int c = 10, b = 20;
+//	int n = sprintf(a,"%0", c);
+//	printf("%d  %d", a, n);
+//	return 0;
+//}
+//Ö¸Õë
+//int main()
+//{
+//	int a = 21;
+//	int* pa = &a;
+//	printf("%d\n", a);
+//	char* pb =(char*)&a;
+//	pb = pb+1;
+//	*pb = 2;
+//	printf("%d", a);
+//
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 20;
+//	char* p = (char*)&a;
+//	printf("%p\n", p);
+//	p = (p + 1);
+//	*p = 2;
+//	printf("%d\n", a);
+//	return 0;
+//}
+//int main()
+//{
+//	int* p = NULL;
+//	int a = 5;
+//	p = &a;
+//	if (p != NULL)
+//	{
+//		printf("1");
+//	}
+//	return 0;
+//}
+//#include <stdio.h>
+//int main()
+//{
+//    int a, i = 0;
+//    scanf("%d", &a);
+//    int b[1000];
+//    while (a)
+//    {
+//        b[i] = a % 6;
+//        a = a / 6;
+//        i++;
+//    }
+//    for (int j = i; j >= 0; j--)
+//    {
+//        printf("%d", b[j]);
+//    }
+//    return 0;
+//}
 int main()
 {
-	int a[50];
-	int c = 10, b = 20;
-	int n = sprintf(a,"%0", c);
-	printf("%d  %d", a, n);
+	int i = 4;
+	while (i - 1)
+	{
+		printf("%d", i);
+		i--;
+	}
 	return 0;
 }
-
 
