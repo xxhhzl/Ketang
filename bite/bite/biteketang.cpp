@@ -731,14 +731,26 @@
 //    }
 //    return 0;
 //}
-int main()
-{
-	int i = 4;
-	while (i - 1)
-	{
-		printf("%d", i);
-		i--;
-	}
-	return 0;
-}
-
+//int main()
+//{
+//	int i = 4;
+//	while (i - 1)
+//	{
+//		printf("%d", i);
+//		i--;
+//	}
+//	return 0;
+//}
+//int main()
+//{
+//	int a = 0x11223344;
+//	char* p = (char*)&a;
+//	*p = 0;
+//	printf("%x", a);
+//	return 0;   
+//}
+//int main()
+//{
+//	printf("%d", a);
+//	return 0;
+//}
